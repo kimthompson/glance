@@ -12,24 +12,41 @@
             - timezone: America/Detroit
               label: Tampa
 
-        - type: markets
-          markets:
-            - symbol: DX=F
-              name: US Dollar
-            - symbol: ^IXIC
-              name: NASDAQ
-            - symbol: SPY
-              name: S&P 500
-            - symbol: TSLA
-              name: Tesla
-            - symbol: NVDA
-              name: NVIDIA
-            - symbol: AAPL
-              name: Apple
-            - symbol: MSFT
-              name: Microsoft
-            - symbol: BTC-USD
-              name: Bitcoin
+        - type: bookmarks
+          groups:
+            - color: 335 100 68
+              links:
+                - title: ProtonMail
+                  url: https://mail.proton.me/u/1/inbox
+                - title: Discord
+                  url: https://discord.com/channels/@me
+                - title: Slack
+                  url: https://app.slack.com/client/T03FNQ916/C3ZEW1HMG
+                - title: LinkedIn
+                  url: https://www.linkedin.com/messaging
+            - title: Life
+              color: 275 100 68
+              links:
+                - title: YNAB
+                  url: https://app.ynab.com/1f5927dd-12de-4d35-a163-8eff9b26b5ef/accounts
+                - title: Notes
+                  url: https://notes.com
+            - title: Entertainment
+              color: 6 100 68
+              links:
+                - title: YouTube
+                  url: https://www.youtube.com/
+                - title: Nebula
+                  url: https://www.nebula.tv/featured
+                - title: Patreon
+                  url: https://www.patreon.com/home
+            - title: Social
+              color: 215 100 68
+              links:
+                - title: Bluesky
+                  url: https://bsky.app
+                - title: Reddit
+                  url: https://www.reddit.com/
 
     - size: full
       widgets:
@@ -37,8 +54,8 @@
           widgets:
             - type: rss
               title: Local
-              limit: 10
-              collapse-after: 3
+              limit: 15
+              collapse-after: 5
               cache: 12h
               feeds:
                 - url: https://sahanjournal.com/feed/
@@ -48,7 +65,7 @@
             - type: rss
               title: The Craft
               limit: 15
-              collapse-after: 3
+              collapse-after: 5
               cache: 12h
               feeds:
                 - url: https://blog.incrementalforgetting.tech/feed
@@ -63,8 +80,8 @@
                   title: Railway Blog
             - type: rss
               title: Trivia
-              limit: 10
-              collapse-after: 3
+              limit: 15
+              collapse-after: 5
               cache: 12h
               feeds:
                 - url: https://acoup.blog/feed
@@ -78,14 +95,43 @@
             - UClt01z1wHHT7c5lKcU8pxRQ # hbomberguy
             - UC7-E5xhZBZdW-8d7V80mzfg # Jenny Nicholson
             - UCaTSjmqzOO-P8HmtVW3t7sA # Todd in the Shadows
+            - UC_-ywsA9-7dSTbWmdQdltbQ # The Musings of a Crouton
 
         - type: group
+          title: Reddit
           widgets:
             - type: reddit
               subreddit: technology
               show-thumbnails: true
             - type: reddit
               subreddit: selfhosted
+              show-thumbnails: true
+            - type: reddit
+              subreddit: homelab
+              show-thumbnails: true
+            - type: reddit
+              subreddit: news
+              show-thumbnails: true
+            - type: reddit
+              subreddit: EnoughMuskSpam
+              show-thumbnails: true
+            - type: reddit
+              subreddit: react
+              show-thumbnails: true
+            - type: reddit
+              subreddit: htmx
+              show-thumbnails: true
+            - type: reddit
+              subreddit: golang
+              show-thumbnails: true
+            - type: reddit
+              subreddit: reactnative
+              show-thumbnails: true
+            - type: reddit
+              subreddit: galaxyzflip
+              show-thumbnails: true
+            - type: reddit
+              subreddit: android
               show-thumbnails: true
 
     - size: small
@@ -110,3 +156,23 @@
             - facebook/react
             - facebook/react-native
             - TanStack/router
+
+        - type: markets
+          title: Retweet to die faster
+          markets:
+            - symbol: DX=F
+              name: US Dollar
+            - symbol: ^IXIC
+              name: NASDAQ
+            - symbol: SPY
+              name: S&P 500
+            - symbol: TSLA
+              name: Tesla
+            - symbol: NVDA
+              name: NVIDIA
+            - symbol: AAPL
+              name: Apple
+            - symbol: MSFT
+              name: Microsoft
+            - symbol: BTC-USD
+              name: Bitcoin
