@@ -87,6 +87,11 @@
                 - url: https://acoup.blog/feed
                   title: ACOUP
 
+        - type: group
+          widgets:
+            - type: hacker-news
+            - type: lobsters
+
         - type: videos
           channels:
             - UCJPHc5wprYeNF0K5ITwPBgA # Behind the Bastards (podcast)
