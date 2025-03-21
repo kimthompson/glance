@@ -1,0 +1,19 @@
+server:
+  assets-path: /app/assets
+
+theme:
+  # Cyberdream.nvim (https://github.com/scottmckendry/cyberdream.nvim)
+  background-color: 210 8 9
+  contrast-multiplier: 1.2
+  primary-color: 65 100 68
+  positive-color: 125 100 68
+  negative-color: 5 100 68
+  
+  # Note: assets are cached by the browser, changes to the CSS file
+  # will not be reflected until the browser cache is cleared (Ctrl+F5)
+  custom-css-file: /assets/user.css
+
+pages:
+  # It's not necessary to create a new file for each page and include it, you can simply
+  # put its contents here, though multiple pages are easier to manage when separated
+  !include: home.yml

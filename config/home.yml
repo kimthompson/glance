@@ -1,0 +1,112 @@
+- name: Home
+  # Optionally, if you only have a single page you can hide the desktop navigation for a cleaner look
+  # hide-desktop-navigation: true
+  columns:
+    - size: small
+      widgets:
+        - type: clock
+          hour-format: 12h
+          timezones:
+            - timezone: America/Chicago
+              label: Saint Paul
+            - timezone: America/Detroit
+              label: Tampa
+
+        - type: markets
+          markets:
+            - symbol: DX=F
+              name: US Dollar
+            - symbol: ^IXIC
+              name: NASDAQ
+            - symbol: SPY
+              name: S&P 500
+            - symbol: TSLA
+              name: Tesla
+            - symbol: NVDA
+              name: NVIDIA
+            - symbol: AAPL
+              name: Apple
+            - symbol: MSFT
+              name: Microsoft
+            - symbol: BTC-USD
+              name: Bitcoin
+
+    - size: full
+      widgets:
+        - type: group
+          widgets:
+            - type: rss
+              title: Local
+              limit: 10
+              collapse-after: 3
+              cache: 12h
+              feeds:
+                - url: https://sahanjournal.com/feed/
+                  title: Sahan Journal
+                - url: https://unicornriot.ninja/feed/
+                  title: UNICORN RIOT
+            - type: rss
+              title: The Craft
+              limit: 15
+              collapse-after: 3
+              cache: 12h
+              feeds:
+                - url: https://blog.incrementalforgetting.tech/feed
+                  title: Incremental Forgetting
+                - url: https://www.saiyangrowthletter.com/feed
+                  title: Saiyan Growth Letter
+                - url: https://thecodist.com
+                  title: The Codist
+                - url: https://blog.pragmaticengineer.com/rss
+                  title: The Pragmatic Engineer
+                - url: https://blog.railway.tech/rss.xml
+                  title: Railway Blog
+            - type: rss
+              title: Trivia
+              limit: 10
+              collapse-after: 3
+              cache: 12h
+              feeds:
+                - url: https://acoup.blog/feed
+                  title: ACOUP
+
+        - type: videos
+          channels:
+            - UCJPHc5wprYeNF0K5ITwPBgA # Behind the Bastards (podcast)
+            - UCJBl1V_PdBNJiUMa40eQdww # Respect the Dead (podcast)
+            - UCsBjURrPoezykLs9EqgamOA # Fireship
+            - UClt01z1wHHT7c5lKcU8pxRQ # hbomberguy
+            - UC7-E5xhZBZdW-8d7V80mzfg # Jenny Nicholson
+            - UCaTSjmqzOO-P8HmtVW3t7sA # Todd in the Shadows
+
+        - type: group
+          widgets:
+            - type: reddit
+              subreddit: technology
+              show-thumbnails: true
+            - type: reddit
+              subreddit: selfhosted
+              show-thumbnails: true
+
+    - size: small
+      widgets:
+        - type: weather
+          location: Saint Paul, Minnesota, United States
+          units: imperial # alternatively "metric"
+          hour-format: 12h # alternatively "24h"
+          # Optionally hide the location from being displayed in the widget
+          # hide-location: true
+
+        - type: calendar
+          first-day-of-week: monday
+
+        - type: releases
+          cache: 1d
+          # Without authentication the Github API allows for up to 60 requests per hour. You can create a
+          # read-only token from your Github account settings and use it here to increase the limit.
+          # token: ...
+          repositories:
+            - glanceapp/glance
+            - facebook/react
+            - facebook/react-native
+            - TanStack/router

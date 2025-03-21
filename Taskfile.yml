@@ -1,0 +1,14 @@
+# https://taskfile.dev
+
+version: '3'
+
+vars:
+  GREETING: Hello, World!
+
+tasks:
+  start:
+    cmds:
+      - sudo docker compose up -d
+  stop:
+    cmds:
+      - sudo docker kill glance
