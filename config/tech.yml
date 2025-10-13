@@ -204,7 +204,7 @@
               icon: /assets/railway-logo.png
             - title: Codeberg
               url: https://codeberg.org
-              icon: /assets/github-logo.png
+              icon: /assets/codeberg-logo.png
             - title: GitHub
               url: https://github.com
-              icon: /assets/codeberg-logo.png
+              icon: /assets/github-logo.png
