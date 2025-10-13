@@ -1,0 +1,201 @@
+- name: News
+  # Optionally, if you only have a single page you can hide the desktop navigation for a cleaner look
+  # hide-desktop-navigation: true
+  head-widgets:
+    - type: markets
+      hide-header: true
+      markets:
+        - symbol: DJIA
+          name: Dow Jones Industrial Average
+        - symbol: SPY
+          name: S&P 500
+        - symbol: NASDAQ
+          name: Nasdaq Composite Index
+
+  columns:
+    - size: small
+      widgets:
+        - type: clock
+          hour-format: 12h
+
+        - type: weather
+          location: Saint Paul, Minnesota, United States
+          units: imperial # alternatively "metric"
+          hour-format: 12h # alternatively "24h"
+          # Optionally hide the location from being displayed in the widget
+          # hide-location: true
+
+        - type: calendar
+          first-day-of-week: sunday
+
+    - size: full
+      widgets:
+        - type: html
+          source: |
+            <h1 style="font-size: 16px;color: white;padding-bottom: 12px;">Local</h1>
+        - type: group
+          widgets:
+            - type: rss
+              title: MPR
+              style: detailed-list
+              limit: 15
+              collapse-after: 5
+              cache: 12h
+              feeds:
+                - url: https://www.mprnews.org/feed/politics
+                  title: MPR - Politics
+                - url: https://www.mprnews.org/feed/arts/science
+                  title: MPR - Science
+                - url: https://www.mprnews.org/feed/education
+                  title: MPR - Education
+            - type: rss
+              title: Racket MN
+              style: detailed-list
+              limit: 15
+              collapse-after: 5
+              cache: 12h
+              feeds:
+                - url: https://racketmn.com/feed
+                  title: Racket MN
+            - type: rss
+              title: Wedge Live
+              style: detailed-list
+              limit: 15
+              collapse-after: 5
+              cache: 12h
+              feeds:
+                - url: https://wedgelive.com/feed
+                  title: The Wedge Times-Picayune
+            - type: rss
+              title: Pioneer Press
+              style: detailed-list
+              limit: 15
+              collapse-after: 5
+              cache: 12h
+              feeds:
+                - url: https://www.twincities.com/feed
+                  title: Pioneer Press
+            - type: rss
+              title: Minnesota Reformer
+              style: detailed-list
+              limit: 15
+              collapse-after: 5
+              cache: 12h
+              feeds:
+                - url: https://minnesotareformer.com/feed
+                  title: Minnesota Reformer
+            - type: rss
+              title: Naomi Kritzer
+              style: detailed-list
+              limit: 15
+              collapse-after: 5
+              cache: 12h
+              feeds:
+                - url: https://naomikritzer.com/feed
+                  title: Naomi Kritzer Blog
+            - type: rss
+              title: Other
+              style: vertical-list
+              limit: 15
+              collapse-after: 10
+              cache: 12h
+              feeds:
+                - url: https://sahanjournal.com/feed/
+                  title: Sahan Journal
+                - url: https://www.startribune.com/rss
+                  title: Star Tribune
+                - url: https://www.minnpost.com/feed
+                  title: Minnpost
+
+        - type: html
+          source: |
+            <h1 style="font-size: 16px;color: white;padding-bottom: 12px;padding-top: 12px;">National/World</h1>
+        - type: group
+          widgets:
+            - type: rss
+              title: NPR
+              style: detailed-list
+              limit: 15
+              collapse-after: 5
+              cache: 12h
+              feeds:
+                - url: https://feeds.npr.org/1001/rss.xml
+                  title: NPR
+            - type: rss
+              title: Al Jazeera
+              style: detailed-list
+              limit: 15
+              collapse-after: 5
+              cache: 12h
+              feeds:
+                - url: https://www.ajplus.net/stories?format=rss
+                  title: Al Jazeera
+            - type: rss
+              title: BBC World
+              style: detailed-list
+              limit: 15
+              collapse-after: 5
+              cache: 12h
+              feeds:
+                - url: https://feeds.bbci.co.uk/news/world/rss.xml
+                  title: BBC World
+            - type: rss
+              title: Reuters
+              style: vertical-list
+              limit: 15
+              collapse-after: 10
+              cache: 12h
+              feeds:
+                - url: https://news.google.com/rss/search?q=when:24h+allinurl:reuters.com&ceid=US:en&hl=en-US&gl=US
+                  title: Reuters
+            - type: rss
+              title: UNICORN RIOT
+              style: detailed-list
+              limit: 15
+              collapse-after: 5
+              cache: 12h
+              feeds:
+                - url: https://unicornriot.ninja/feed/
+                  title: UNICORN RIOT
+            - type: videos
+              title: Some More News
+              include-shorts: true
+              style: vertical-list
+              channels:
+                - UCvlj0IzjSnNoduQF0l3VGng # Some More News
+
+        - type: group
+          widgets:
+            - type: reddit
+              subreddit: politics
+              show-thumbnails: true
+            - type: reddit
+              subreddit: saintpaul
+              show-thumbnails: true
+            - type: reddit
+              subreddit: minneapolis
+              show-thumbnails: true
+            - type: reddit
+              subreddit: minnesota
+              show-thumbnails: true
+            - type: reddit
+              subreddit: iowa
+              show-thumbnails: true
+            - type: reddit
+              subreddit: wisconsin
+              show-thumbnails: true
+            - type: reddit
+              subreddit: illinois
+              show-thumbnails: true
+            - type: reddit
+              subreddit: news
+              show-thumbnails: true
+            - type: reddit
+              subreddit: goodnews
+              show-thumbnails: true
+            - type: reddit
+              subreddit: Palestine
+              show-thumbnails: true
+            - type: reddit
+              subreddit: ukraine
+              show-thumbnails: true

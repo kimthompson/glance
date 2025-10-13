@@ -1,0 +1,70 @@
+- name: Fun
+  # Optionally, if you only have a single page you can hide the desktop navigation for a cleaner look
+  # hide-desktop-navigation: true
+  columns:
+    - size: small
+      widgets:
+        - type: to-do
+
+        - type: clock
+          hour-format: 12h
+
+        - type: weather
+          location: Saint Paul, Minnesota, United States
+          units: imperial # alternatively "metric"
+          hour-format: 12h # alternatively "24h"
+          # Optionally hide the location from being displayed in the widget
+          # hide-location: true
+
+        - type: calendar
+          first-day-of-week: sunday
+
+        - type: twitch-channels
+          channels:
+            - froob
+            - BreakfastFriends
+            - GamesDoneQuick
+            - nyanners
+            - lucah
+            - NeilCic
+            - cohhcarnage
+
+    - size: full
+      widgets:
+        - type: videos
+          style: grid-cards
+          collapse-after-rows: 3
+          channels:
+            - UClt01z1wHHT7c5lKcU8pxRQ # hbomberguy
+            - UCNvsIonJdJ5E4EXMa65VYpA # Contrapoints
+            - UC7-E5xhZBZdW-8d7V80mzfg # Jenny Nicholson
+            - UCaTSjmqzOO-P8HmtVW3t7sA # Todd in the Shadows
+            - UC_-ywsA9-7dSTbWmdQdltbQ # The Musings of a Crouton
+            - UCuwUl4_fcRio_valO7_lxjA # Mike's Mic
+            - UCFQMnBA3CS502aghlcr0_aw # Coffeezilla
+            - UC28n0tlcNSa1iPe5mettocg # voidzilla
+            - UCG1h-Wqjtwz7uUANw6gazRw # Lindsay Ellis
+
+        - type: videos
+          style: grid-cards
+          collapse-after-rows: 2
+          title: Podcasts
+          channels:
+            - UCJPHc5wprYeNF0K5ITwPBgA # Behind the Bastards (podcast)
+            - UCJBl1V_PdBNJiUMa40eQdww # Respect the Dead (podcast)
+            - UCsdzuPs5NKvdsBkQnP7Af8w # Better Offline (podcast)
+            - UCPxHg4192hLDpTI2w7F9rPg # Well There's Your Problem
+            - UC6r-3aXbR7k7M8aIXByqPWA # Revolutions & If Books Could Kill Reuploader Extraordinaire
+
+        - type: group
+          widgets:
+            - type: reddit
+              subreddit: yakuzagames
+              show-thumbnails: true
+            - type: reddit
+              subreddit: ffxiv
+              show-thumbnails: true
+            - type: reddit
+              subreddit: kingdomcome
+              show-thumbnails: true
+
