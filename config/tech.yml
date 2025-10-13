@@ -190,22 +190,21 @@
             - immich-app/immich
             - syncthing/syncthing
 
-
-    - type: monitor
-      cache: 1m
-      limit: 25
-      collapse-after: 5
-      title: Services
-      sites:
-        - title: Blog/Portfolio
-          url: https://kimfreechack.me
-          icon: /assets/logo-minimal-v1.png
-        - title: Railway
-          url: https://railway.com
-          icon: /assets/railway-logo.png
-        - title: Codeberg
-          url: https://codeberg.org
-          icon: /assets/github-logo.png
-        - title: GitHub
-          url: https://github.com
-          icon: /assets/codeberg-logo.png
+        - type: monitor
+          cache: 1m
+          limit: 25
+          collapse-after: 5
+          title: Services
+          sites:
+            - title: Blog/Portfolio
+              url: https://kimfreechack.me
+              icon: /assets/logo-minimal-v1.png
+            - title: Railway
+              url: https://railway.com
+              icon: /assets/railway-logo.png
+            - title: Codeberg
+              url: https://codeberg.org
+              icon: /assets/github-logo.png
+            - title: GitHub
+              url: https://github.com
+              icon: /assets/codeberg-logo.png
