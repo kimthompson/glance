@@ -19,6 +19,36 @@
         - type: calendar
           first-day-of-week: sunday
 
+        - type: markets
+          title: Retweet to make it die faster
+          markets:
+            - symbol: NVDA
+              name: NVIDIA
+            - symbol: AMD
+              name: AMD
+            - symbol: CRWV
+              name: CoreWeave
+            - symbol: SNOW
+              name: Snowflake
+            - symbol: PLTR
+              name: Palantir
+            - symbol: ORCL
+              name: Oracle
+            - symbol: GOOGL
+              name: Google
+            - symbol: AAPL
+              name: Apple
+            - symbol: AMZN
+              name: Amazon
+            - symbol: TSLA
+              name: Tesla
+            - symbol: META
+              name: FaceBook
+            - symbol: MSFT
+              name: Microsoft
+            - symbol: BTC-USD
+              name: Bitcoin
+
     - size: full
       widgets:
         - type: group
@@ -115,6 +145,7 @@
             - UCyU5wkjgQYGRB0hIHMwm2Sg # Syntax
             - UCl2mFZoRqjw_ELax4Yisf6w # Louis Rossman
             - UCshObcm-nLhbu8MY50EZ5Ng # Benn Jordan
+            - UCs_tLP3AiwYKwdUHpltJPuA # GOTO Conferences
 
         - type: group
           widgets:
@@ -156,33 +187,3 @@
             - go-gitea/gitea
             - immich-app/immich
             - syncthing/syncthing
-
-        - type: markets
-          title: Retweet to make it die faster
-          markets:
-            - symbol: NVDA
-              name: NVIDIA
-            - symbol: AMD
-              name: AMD
-            - symbol: CRWV
-              name: CoreWeave
-            - symbol: SNOW
-              name: Snowflake
-            - symbol: PLTR
-              name: Palantir
-            - symbol: ORCL
-              name: Oracle
-            - symbol: GOOGL
-              name: Google
-            - symbol: AAPL
-              name: Apple
-            - symbol: AMZN
-              name: Amazon
-            - symbol: TSLA
-              name: Tesla
-            - symbol: META
-              name: FaceBook
-            - symbol: MSFT
-              name: Microsoft
-            - symbol: BTC-USD
-              name: Bitcoin
