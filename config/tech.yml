@@ -124,6 +124,8 @@
                   title: Tech Policy.press
                 - url: https://react.dev/rss.xml
                   title: React Blog
+                - url: https://voidzero.dev/feed.xml
+                  title: Vite
 
         # - icon: https://yt3.googleusercontent.com/pJTCOISMYIi2iHJpSccILsQr7XjVonBiS_MDzSw9TO_L4QVhtc0L5S78mFGziHDdior_QKxyfQ=s160-c-k-c0x00ffffff-no-rj
         # - type: html
@@ -182,9 +184,10 @@
           repositories:
             - facebook/react-native
             - facebook/react
+            - vitejs/vite
+            - TanStack/router
             - bigskysoftware/htmx
             - LazyVim/LazyVim
-            - TanStack/router
             - glanceapp/glance
             - go-gitea/gitea
             - immich-app/immich
