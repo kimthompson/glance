@@ -122,6 +122,15 @@
                 - url: https://feeds.npr.org/1001/rss.xml
                   title: NPR
             - type: rss
+              title: NextDraft
+              style: detailed-list
+              limit: 15
+              collapse-after: 5
+              cache: 12h
+              feeds:
+                - url: https://nextdraft.com/archives/feed
+                  title: NextDraft
+            - type: rss
               title: Al Jazeera
               style: detailed-list
               limit: 15
