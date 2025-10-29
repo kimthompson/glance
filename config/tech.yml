@@ -126,6 +126,8 @@
                   title: React Blog
                 - url: https://voidzero.dev/feed.xml
                   title: Vite
+                - url: https://sarunw.com/feed.xml
+                  title: Sarunw (Swift & SwiftUI)
 
         # - icon: https://yt3.googleusercontent.com/pJTCOISMYIi2iHJpSccILsQr7XjVonBiS_MDzSw9TO_L4QVhtc0L5S78mFGziHDdior_QKxyfQ=s160-c-k-c0x00ffffff-no-rj
         # - type: html
