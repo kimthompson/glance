@@ -131,6 +131,15 @@
                 - url: https://nextdraft.com/archives/feed
                   title: NextDraft
             - type: rss
+              title: Medidations in an Emergency
+              style: detailed-list
+              limit: 15
+              collapse-after: 5
+              cache: 12h
+              feeds:
+                - url: https://www.meditationsinanemergency.com/rss
+                  title: Medidations in an Emergency
+            - type: rss
               title: Al Jazeera
               style: detailed-list
               limit: 15
