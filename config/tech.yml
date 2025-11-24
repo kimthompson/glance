@@ -54,16 +54,7 @@
         - type: group
           widgets:
             - type: rss
-              title: Pluralistic
-              style: detailed-list
-              limit: 15
-              collapse-after: 5
-              cache: 12h
-              feeds:
-                - url: https://pluralistic.net/feed
-                  title: Pluralistic
-            - type: rss
-              title: Futurism
+              title: General
               style: detailed-list
               limit: 15
               collapse-after: 5
@@ -71,43 +62,8 @@
               feeds:
                 - url: https://futurism.com/feed
                   title: Futurism
-            - type: rss
-              title: Better Offline
-              style: detailed-list
-              limit: 15
-              collapse-after: 5
-              cache: 12h
-              feeds:
                 - url: https://www.wheresyoured.at/rss
                   title: Ed Zitron's Where's Your Ed At
-            - type: rss
-              title: React Native
-              style: detailed-list
-              limit: 15
-              collapse-after: 5
-              cache: 12h
-              feeds:
-                - url: https://reactnative.dev/blog/rss.xml
-                  title: React Native
-            - type: rss
-              title: React Native
-              style: detailed-list
-              limit: 15
-              collapse-after: 5
-              cache: 12h
-              feeds:
-                - url: https://reactnative.dev/blog/rss.xml
-                  title: React Native
-            - type: hacker-news
-              collapse-after: 10
-            - type: lobsters
-              collapse-after: 10
-            - type: rss
-              title: Other
-              limit:
-              collapse-after: 10
-              cache: 12h
-              feeds:
                 - url: https://blog.incrementalforgetting.tech/feed
                   title: Incremental Forgetting
                 - url: https://www.normaltech.ai/feed
@@ -128,6 +84,28 @@
                   title: Vite
                 - url: https://sarunw.com/feed.xml
                   title: Sarunw (Swift & SwiftUI)
+            - type: rss
+              title: Important
+              style: detailed-list
+              limit: 15
+              collapse-after: 5
+              cache: 12h
+              feeds:
+                - url: https://reactnative.dev/blog/rss.xml
+                  title: React Native
+            - type: rss
+              title: Pluralistic
+              style: detailed-list
+              limit: 15
+              collapse-after: 5
+              cache: 12h
+              feeds:
+                - url: https://pluralistic.net/feed
+                  title: Pluralistic
+            - type: hacker-news
+              collapse-after: 10
+            - type: lobsters
+              collapse-after: 10
 
         # - icon: https://yt3.googleusercontent.com/pJTCOISMYIi2iHJpSccILsQr7XjVonBiS_MDzSw9TO_L4QVhtc0L5S78mFGziHDdior_QKxyfQ=s160-c-k-c0x00ffffff-no-rj
         # - type: html
@@ -195,7 +173,6 @@
             - glanceapp/glance
             - go-gitea/gitea
             - immich-app/immich
-            - syncthing/syncthing
 
         - type: monitor
           cache: 1m
