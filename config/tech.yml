@@ -54,14 +54,34 @@
         - type: group
           widgets:
             - type: rss
+              title: Pluralistic
+              style: detailed-list
+              limit: 15
+              collapse-after: 5
+              cache: 12h
+              feeds:
+                - url: https://pluralistic.net/feed
+                  title: Pluralistic
+            - type: rss
+              title: Important
+              style: detailed-list
+              limit: 15
+              collapse-after: 5
+              cache: 12h
+              feeds:
+                - url: https://reactnative.dev/blog/rss.xml
+                  title: React Native
+            - type: hacker-news
+              collapse-after: 10
+            - type: lobsters
+              collapse-after: 10
+            - type: rss
               title: General
               style: detailed-list
               limit: 15
               collapse-after: 5
               cache: 12h
               feeds:
-                - url: https://futurism.com/feed
-                  title: Futurism
                 - url: https://www.wheresyoured.at/rss
                   title: Ed Zitron's Where's Your Ed At
                 - url: https://blog.incrementalforgetting.tech/feed
@@ -85,27 +105,14 @@
                 - url: https://sarunw.com/feed.xml
                   title: Sarunw (Swift & SwiftUI)
             - type: rss
-              title: Important
+              title: Futurism
               style: detailed-list
               limit: 15
               collapse-after: 5
               cache: 12h
               feeds:
-                - url: https://reactnative.dev/blog/rss.xml
-                  title: React Native
-            - type: rss
-              title: Pluralistic
-              style: detailed-list
-              limit: 15
-              collapse-after: 5
-              cache: 12h
-              feeds:
-                - url: https://pluralistic.net/feed
-                  title: Pluralistic
-            - type: hacker-news
-              collapse-after: 10
-            - type: lobsters
-              collapse-after: 10
+                - url: https://futurism.com/feed
+                  title: Futurism
 
         # - icon: https://yt3.googleusercontent.com/pJTCOISMYIi2iHJpSccILsQr7XjVonBiS_MDzSw9TO_L4QVhtc0L5S78mFGziHDdior_QKxyfQ=s160-c-k-c0x00ffffff-no-rj
         # - type: html
@@ -152,6 +159,12 @@
     - size: small
       title: Watch
       widgets:
+        - type: bookmarks
+          groups:
+            - links:
+                - title: Frontend Master's Live Courses
+                  url: https://frontendmasters.com/workshops/
+        
         - type: releases
           cache: 1d
           limit: 25
