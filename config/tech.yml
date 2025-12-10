@@ -152,10 +152,6 @@
     - size: small
       title: Watch
       widgets:
-        - type: change-detection
-          instance-url: https://changedetection-production-2a70.up.railway.app/
-          token: ${CHANGE_DETECTION_TOKEN}
-
         - type: releases
           cache: 1d
           limit: 25
