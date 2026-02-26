@@ -104,6 +104,10 @@
                   title: Vite
                 - url: https://sarunw.com/feed.xml
                   title: Sarunw (Swift & SwiftUI)
+                - url: https://shaeomonijo.substack.com/feed
+                  title: AI, Humanities, and the Future of Work
+                - url: https://daedtech.com/rss
+                  title: "DaedTech: Stories About Software"
             - type: rss
               title: Futurism
               style: detailed-list
@@ -162,9 +166,11 @@
         - type: bookmarks
           groups:
             - links:
+                - title: My Storygraph
+                  url: https://app.thestorygraph.com/profile/freechsoft
                 - title: Frontend Master's Live Courses
                   url: https://frontendmasters.com/workshops/
-        
+
         - type: releases
           cache: 1d
           limit: 25
